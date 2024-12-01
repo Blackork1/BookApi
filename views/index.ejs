@@ -1,0 +1,32 @@
+<%- include('partials/header.ejs'); -%>
+    <div class="container">
+        <div class="column">
+            <header class="col-8 text-start mx-auto py-3">
+                <h1>Sören Blocksdorf</h1>
+            </header>
+            <div class="page-description col-8 mx-auto text-start ">
+                <p>Auf dieser Seite findest du alle Bücher die ich bislang gelesen habe. Zu jedem Buch habe ich eine
+                    Zusammenfassung und eine persönliche Bewertung erstellt.
+                    Bei Fragen kannst du mir eine <a href="/contact">Mail</a> schreiben.
+                    Ich wünsche dir viel Spaß beim Lesen.</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="container book-section ">
+        <div class="row col-8 mx-auto">
+            <div class="picture col py-3 text-center" id="book.picture">
+                <img src="https://picsum.photos/seed/300/350">
+            </div>
+            <div class="book col-6">
+                <h1 class="book-title col text-start" id="book.name"> Monsieur le Comte</h1>
+                <div class="row ">
+                    <p class="book-author col text-start" id="book.author">by Pierre Martin</p>
+                    <p class="book-rating col text-end" id="book.rating">Rating: 9/10</p>
+                </div>
+                <p class="book-description"></p>
+            </div>
+        </div>
+    </section>
+
+    <%- include('partials/footer.ejs'); -%>
